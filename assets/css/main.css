@@ -3906,7 +3906,7 @@
 				#menu > ul.links > li {
 					padding: 0;
 				}
-
+					
 					#menu > ul.links > li > a:not(.button) {
 						border: 0;
 						border-top: solid 1px rgba(255, 255, 255, 0.125);
@@ -3929,6 +3929,35 @@
 					#menu > ul.links > li:first-child > a:not(.button) {
 						border-top: 0 !important;
 					}
+					
+
+					/* Menu links: keep same blue color even after clicking */
+					/*
+					#menu > ul.links > li > a:not(.button),
+					#menu > ul.links > li > a:not(.button):visited {
+    					border: 0;
+					    border-top: solid 1px rgba(255, 255, 255, 0.125);
+					    color: #007bff !important; 
+					    display: block;
+					    line-height: 3.5rem;
+					    text-decoration: none;
+					    text-transform: uppercase;
+					}
+					*/
+
+					/* Hover effect: slightly darker blue */
+					/*
+					#menu > ul.links > li > a:not(.button):hover {
+					    color: #0056b3;
+					}
+					*/
+
+					/* First child special border-top */
+					/*
+					#menu > ul.links > li:first-child > a:not(.button) {
+					    border-top: 0 !important;
+					}
+					*/
 
 		#menu .close {
 			text-decoration: none;
@@ -4311,3 +4340,73 @@
 			}
 
 		}
+
+	/* Keep all ul.links links blue, even after being clicked */
+	/* Keep links outside the menu blue */
+	ul.links:not(#menu > ul.links) li a,
+	ul.links:not(#menu > ul.links) li a:visited {
+	    color: #007bff !important;  /* blue */
+	    text-decoration: none;
+	}
+
+	ul.links:not(#menu > ul.links) li a:hover,
+	ul.links:not(#menu > ul.links) li a:focus {
+	    color: #0056b3 !important;  /* darker blue on hover */
+	}
+
+
+	.blue-links a,
+	.blue-links a:visited {
+	    color: #007bff !important;
+	    text-decoration: none;
+	}
+
+	.blue-links a:hover,
+	.blue-links a:focus {
+	    color: #0056b3 !important;
+	}
+
+
+	.image-right {
+	  float: right;              /* image floats on the right */
+	  width: 50%;                /* container takes 50% of page width */
+	  margin-left: 1em;          /* small gap between image and text */
+	  margin-bottom: 1em;        /* spacing below container */
+	  box-sizing: border-box;    /* include padding/margin in width */
+	}
+
+	.image-right img {
+	  width: 100%;               /* image fills container width */
+	  height: auto;              /* maintain aspect ratio */
+	  display: block;            /* remove inline spacing */
+	  margin-bottom: 0.5em;      /* space between image and caption */
+	}
+
+	.image-right span {
+	  display: block;
+	  font-size: 16px;
+	  line-height: 1.4;
+	}
+
+	.centered-image {
+	  text-align: center;       /* center the content */
+	  margin: 2em 0;            /* vertical spacing */
+	}
+
+	.centered-image img {
+	  max-width: 80%;           /* responsive: image shrinks on small screens */
+	  height: auto;             /* maintain aspect ratio */
+	  display: block;
+	  margin: 0 auto;           /* centers the image horizontally */
+	}
+
+	.centered-image .caption {
+	  font-size: 16px;
+	  line-height: 1.5;
+	  margin-top: 0.5em;
+	  max-width: 950px;         /* optional: restrict text width */
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+

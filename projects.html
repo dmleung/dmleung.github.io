@@ -77,12 +77,40 @@
 
 
 
-
 			<tr>
         		<td align="left" valign="top" width="212" height=25><hr></td>
      		</tr>			
 
      		<p style="margin-left:4em;margin-right:4em;margin-top:2.5em;font-size:23px"> <b> Effects of land-surface characterizations on desert dust emissions </b> </p> 
+
+
+			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px"> Mineral dust is by mass the dominant aerosol type in the atmosphere, and it influences weather by regulating the radiation and cloud budget. It is vital to accurately predict global and regional dust levels to understand its impacts on air pollution, radiation, clouds, and biogeochemistry. However, the physics of dust emission is not very complete in Earth system models (ESMs), hindering the accuracy of dust loading predictions in terms of spatiotemporal variability as well as the associated Earth system predictability.  </p> 
+			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px"> Our studies focus on investigating how land-surface conditions (such as rocks and vegetation) as well as boundary-layer characteristics influence dust emission and transport. We developed a dust emission scheme that captures both impacts: The first one is the physics of wind drag partition due to surface roughness elements, such as vegetation and rocks, that can partition and absorb surface wind stress and reduces wind erosion on soils. Another physics is the dust emission intermittency due to high-frequency near-surface turbulence, primarily because turbulence-driven wind fluctuations can sweep across the dust emission threshold and shut off emissions multiple times within a model timestep, leading to the smaller dust fluxes than GCMs predicted. Our newly developed dust emission scheme shows very different global patterns of dust emissions and dust aerosol optical depth compared with the other dust emission schemes in the Community Earth System Model version 3 (CESM3). The Leung et al. (2023; L23) scheme is now the default dust emission scheme in CESM3, and is also used in other models such as GEOS-Chem as a default (Zhang et al., 2025). </p>
+
+
+			<div class="centered-image">
+			  <img src="images/DustinCESM3.png" alt="dust in CESM3">
+			  <p class="caption">
+			    Leung_2023 (L23) is our newly developed dust emission scheme in the CESM3. It shows a very different spatial distribution than the older Zender et al. (2003) scheme. L23 has a more spatially homogeneous dust following the global distributions of deserts and the dust strength reasonably peaks in the Sahara. The extremely high dust peaks over Patagonia and Australia are now gone in L23.
+			  </p>
+			</div>
+
+			
+
+			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px">References:<br>
+				  • Danny M. Leung et al., 2023, <i>Atmos. Chem. Phys.</i>, 23, 6487-6523. <a href="https://acp.copernicus.org/articles/23/6487/2023/" target="_blank">[link]</a> <br>
+				  • Danny M. Leung et al., 2024, <i>Atmos. Chem. Phys.</i>, 24, 2287–2318. <a href="https://acp.copernicus.org/articles/24/2287/2024/" target="_blank">[link]</a> <br>
+				  • Danny M. Leung, CLM Technical Note on dust emissions. <a href="https://escomp.github.io/CTSM/tech_note/Dust/CLM50_Tech_Note_Dust.html" target="_blank">[link]</a> <br>
+				  • Dandan Zhang et al., 2025, <i>Geosci. Model Dev.</i>, 18, 6767–6803. <a href="https://gmd.copernicus.org/articles/18/6767/2025/" target="_blank">[link]</a> <br>
+				  • Longlei Li et al., 2026, <i>J. Adv. Model. Earth Syst.</i>, 18, e2025MS005420. <a href="https://doi.org/10.1029/2025MS005420" target="_blank">[link]</a> <br>
+			</p>
+
+
+			<tr>
+        		<td align="left" valign="top" width="212" height=25><hr></td>
+     		</tr>			
+
+     		<p style="margin-left:4em;margin-right:4em;margin-top:2.5em;font-size:23px"> <b> Historical evolution of global and regional dust </b> </p> 
 
      		<!--
 			<div class="image-right">
@@ -93,30 +121,21 @@
 			</div>
 			-->
 
-			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px"> Mineral dust is by mass the dominant aerosol type in the atmosphere, and it influences climate and weather by regulating the radiation budget. However, the physics of dust emission is not very complete in the global climate models (GCMs), affecting the accuracy of dust loading predictions in terms of spatiotemporal variability as well as the associated climate change predictions. Our study focuses on implementing two pieces of missing physics from GCMs. The first one is the physics of winde drag partition due to surface roughness elements. Roughness elements such as vegetation and rocks can dissipate surface wind stress and protect soils from erosion. Another physics is the dust emission intermittency due to high-frequency near-surface turbulence, primarily because turbulence-driven wind fluctuations can sweep across the dust emission threshold and shut off emissions multiple times within a model timestep, leading to the smaller dust fluxes than GCMs predicted. Our newly developed dust emission scheme shows very different global patterns of dust emissions and dust aerosol optical depth compared with the other dust emission schemes in the Community Earth System Model version 3 (CESM3). </p>
+			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px"> Since dust is a globally dominant aerosol type and has cooling effects on Earth's atmosphere, it is important to understand its historical evolution in the atmosphere and answer the question of how dust historically influences the Earth's sensitivity to the greenhouse gases-induced warming. Long-term sedimentary and ice core records indicate that dust has historically increased by 50–55 % for 1850–2000. The issue is that the current Earth system models (ESMs) cannot accurately capture the historical increase in dust. This is bizzare, because the dust emission schemes in ESMs are dependent on meteorological conditions like winds and land-surface conditions like soil moisture and leaf area index. Historical simulations of meteorology and land state should be influencing simulated historical dust emissions and driving the increase in dust. Thus, what hinders our models from capturing the historical dust changes and how we can fix the models remain the pressing science questions to address. There are two hypotheses that need to be tested: (1) We may have historical biases in the land state, and (2) our dust emission scheme needs to couple better with the meteorology and the land. </p>
 
-			<!--
-			<p style="text-align:center;"><img src="images/DustinCESM3.png" alt="dust in CESM3" style="width:950px;height:600px"> 
-			  <span>
-			    Leung_2023 is our newly developed dust emission scheme in the CESM3. It shows a very different spatial distribution than the older Zender et al. (2003) scheme. Leung_2023 has a more spatially homogeneous dust following the global dsitributions of deserts and the dust strength reasonably peaks in the Sahara.
-			  </span>
-			</p>
-			-->
 
 			<div class="centered-image">
-			  <img src="images/DustinCESM3.png" alt="dust in CESM3">
+			  <img src="images/histdustevolution.png" alt="historical dust evolution">
 			  <p class="caption">
-			    Leung_2023 is our newly developed dust emission scheme in the CESM3. It shows a very different spatial distribution than the older Zender et al. (2003) scheme. Leung_2023 has a more spatially homogeneous dust following the global distributions of deserts and the dust strength reasonably peaks in the Sahara. The extremely high dust peaks over Patagonia and Australia are now gone in Leung_2023.
+			    Historical (1850–2000) dust variability as depicted by a global dust reconstruction using multiple sites of sedimentary and ice core records of dust (black line), as well as by a suite of global Earth system model simulations (colored dashed and solid lines) from multiple Earth system models. All time series are 10-year running means of annual dust time series. Nearly no models can replicate the reconstructed historical dust increase. We used an empirical inversion method with the core records to derive a global dust emission dataset (DustCOMM) for 1850–2000. We then used DustCOMM emissions to drive the Community Earth System Model simulation (red solid line). This is the only simulation that empirically captures the historical variability of dust. Reprinted from Atmospheric Chemistry and Physics, Vol. 5, Issue 24, Leung, D. M. et al., “A global dust emission dataset for estimating dust radiative forcings in climate models”, pp. 2311–2331. Danny M. Leung retains the figure’s copyright in this paper published by Copernicus Publications under the Creative Commons Attribution 4.0 License (CC BY 4.0).
 			  </p>
 			</div>
 
-			
 
 			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px">References:<br>
-				  • Leung et al., 2023, <i>Atmos. Chem. Phys.</i>, 23, 6487-6523. <a href="https://acp.copernicus.org/articles/23/6487/2023/" target="_blank">[link]</a> <br>
-				  • Leung et al., 2024, <i>Atmos. Chem. Phys.</i>, 24, 2287–2318. <a href="https://acp.copernicus.org/articles/24/2287/2024/" target="_blank">[link]</a> <br>
+				  • Jasper F. Kok et al., 2023, <i>Nature Rev. Earth & Environ.</i>, 4, 71-86. <a href="https://jasperfkok.com/wp-content/uploads/2023/07/kok_et_al_2023_nature_reviews_dust_impacts_on_climate.pdf" target="_blank">[link]</a> <br>
+				  • Danny M. Leung et al., 2025, <i>Atmos. Chem. Phys.</i>, 25, 2311–2331. <a href="https://acp.copernicus.org/articles/25/2311/2025/" target="_blank">[link]</a> <br>
 			</p>
-
 
 			
      		<tr>
@@ -124,24 +143,21 @@
      		</tr>			
 
 
-			<p style="margin-left:4em;margin-right:4em;margin-top:2.5em;font-size:23px"> <b>Effects of meteorology and climate change on air quality</b> </p> 
+			<p style="margin-left:4em;margin-right:4em;margin-top:2.5em;font-size:23px"> <b>Effects of meteorology and long-term weather on air quality</b> </p> 
 
-			<!--
-			<p style="margin-left:4em;margin-right:4em;text-align: center; padding-bottom: 15px; padding-left: 15px; float: right; display: block;"><img src="images/dpm25globe.png" alt="global pm2.5 change by 2050s due to climate change" width="700" height="420"  /><br /><span style="font-size: 16px;display:inline-block;width:50em">Global PM2.5 changes by 2050s due to climate change, estimated from our statistical model. Many regions have higher PM2.5 levels because of higher temperature, leading to faster chemistry, higher biogenic emissions and more fires in the future. Some regions have decreased PM levels because of the volatilization of nitrate and organics under higher temperature. </span></p>
-			-->
 
 			<div class="image-right">
 			  <img src="images/dpm25globe.png" alt="global pm2.5 change by 2050s due to climate change">
 			  <span>
-			    Global PM2.5 changes by 2050s due to climate change, estimated from our statistical model. Many regions have higher PM2.5 levels because of higher temperature, leading to faster chemistry, higher biogenic emissions and more fires in the future. Some regions have decreased PM levels because of the volatilization of nitrate and organics under higher temperature.
+			    Global PM2.5 changes by 2050s due to temperature change, estimated from our statistical model. Many regions have higher PM2.5 levels because of higher temperature, leading to faster chemistry, higher biogenic emissions and more fires in the future. Some regions have decreased PM levels because of the volatilization of nitrate and organics under higher temperature.
 			  </span>
 			</div>
 
 
-			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px"> The variability of air quality is determined by both changes in emissions and meteorology. I investigate how day-to-day changes in local meteorology (e.g., temperature, humidity, rainfall, wind direction) as well as synoptic circulation (e.g., cyclones, monsoons, highs), will impact on global and East Asian air quality, with a focus on fine particulate matter (PM2.5). To achieve this, we use coupled chemistry–climate modeling (e.g., GEOS-Chem, CESM) and multivariate statistical analysis of global observations to examine the importance of meteorology on PM2.5. For example, we showed that over much of East Asia, air quality is determined by the northerly cold advections from the semi-permanent Siberian High as quantified by the principal component analysis (PCA). Our study also shows that the interannual variability of PM2.5 is mostly driven by interannual temperature changes. It follows that global warming will exacerbate future PM2.5 air quality over most of the world. We constructed a statistical model to predict future PM2.5 changes by 2050s due to climate change, and our predictions indicate some increase in PM2.5 up to ~30 μg m-3. We showed that this "climate penalty" effect will partially counteract the air quality improvements by anthropogenic emissions reductions. </p> 
+			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px"> The variability of air quality is determined by both changes in emissions and meteorology. I investigate how day-to-day changes in local meteorology (e.g., temperature, humidity, rainfall, wind direction) as well as synoptic circulation (e.g., cyclones, monsoons, highs), will impact on global and East Asian air quality, with a focus on fine particulate matter (PM2.5). To achieve this, we use coupled chemistry–meteorology modeling (e.g., GEOS-Chem, CESM) and multivariate statistical analysis of global observations to examine the importance of meteorology on PM2.5. For example, we showed that over much of East Asia, air quality is determined by the northerly cold advections from the semi-permanent Siberian High as quantified by the principal component analysis (PCA). Our study also shows that the interannual variability of PM2.5 is mostly driven by interannual temperature changes. It follows that global warming will exacerbate future PM2.5 air quality over most of the world. We constructed a statistical model to predict future PM2.5 changes by 2050s due to meteorological changes, and our predictions indicate some increase in PM2.5 up to ~30 μg m-3. We showed that this "climate penalty" effect will partially counteract the air quality improvements by anthropogenic emissions reductions. </p> 
 			
 			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px">References:<br>
-				  • Leung et al., 2018, <i>Atmos. Chem. Phys.</i>, 18, 6733-6748. <a href="https://acp.copernicus.org/articles/18/6733/2018/" target="_blank">[link]</a> <br>
+				  • Danny M. Leung et al., 2018, <i>Atmos. Chem. Phys.</i>, 18, 6733-6748. <a href="https://acp.copernicus.org/articles/18/6733/2018/" target="_blank">[link]</a> <br>
 			</p>
 
 			<!--<p style="text-align:center;"><img src="images/dpm25globe.png" alt="global pm2.5 change by 2050s due to climate change" style="width:470px;height:300px"> 
@@ -162,7 +178,7 @@
 
 			
 			<p style="margin-left:4.5em;margin-right:4.5em;font-size:19px">References:<br>
-				• Leung et al., 2020, <i>Geophys. Res. Lett.</i>, 47(14), e2020GL087721. <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020GL087721?casa_token=ekOLrK2rHigAAAAA%3A4WsemFXj-_PaVUBNTOHdmqk2SSGsO_QfKIXi7voVcg5x6Ldp6f4-YvF26fDIU76nZin8GFsR0HVSMow" target="_blank">[link]</a> <br>
+				• Danny M. Leung et al., 2020, <i>Geophys. Res. Lett.</i>, 47(14), e2020GL087721. <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020GL087721?casa_token=ekOLrK2rHigAAAAA%3A4WsemFXj-_PaVUBNTOHdmqk2SSGsO_QfKIXi7voVcg5x6Ldp6f4-YvF26fDIU76nZin8GFsR0HVSMow" target="_blank">[link]</a> <br>
 			</p>
 
 			<!--<p style="text-align:center;"><img src="images/pmrateJJADJF.png" alt="2014-2017 PM2.5 timeseries in China winter vs summer" style="width:700px;height:500px"> 
